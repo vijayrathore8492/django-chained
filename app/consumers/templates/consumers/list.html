@@ -1,0 +1,11 @@
+{% if all_consumers %}
+<ul>
+    {% for consumer in all_consumers %}
+    <li>
+        <span>{{ consumer.name }}</span> : <span>{{ consumer.email }}</span>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No consumer data available.</p>
+{% endif %}
