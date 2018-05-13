@@ -1,9 +1,8 @@
-<h1>Index</h1>
-<ul>
-    <li>
-        <a href="{% url 'consumers:list' %}">List Consumer</a>
-    </li>
-    <li>
-        <a href="{% url 'consumers:add' %}">Add Consumer</a>
-    </li>
-</ul>
+{% extends "consumers/layout.html" %}
+{% block content %}
+    <div class="jumbotron">
+        <h1>Seedstars Sample Project</h1>
+        <p>An application which stores names and email addresses in a database. 
+            Please follow the links in header to see it in action.</p>
+    </div>
+{% endblock %}

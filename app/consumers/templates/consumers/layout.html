@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'consumers/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'consumers/bootstrap/css/bootstrap-theme.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'consumers/css/jumbotron-narrow.css' %}" />
+    <script src="{% static 'consumers/js/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'consumers/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <title>{% block title %}Django Chained{% endblock %}</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation">
+                        <a href="/">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="{% url 'consumers:add' %}">Add</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="{% url 'consumers:list' %}">List</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Django Chained</h3>
+        </div>
+        <div class="row">
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
