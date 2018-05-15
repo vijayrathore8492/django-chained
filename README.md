@@ -19,7 +19,7 @@ Follow below steps for setup
 
 ### Run the server 
  - cd django-chained
- - source authapienv/bin/activate
+ - source djangoenv/bin/activate
  - python3 manage.py runserver [it will start server on http://localhost:8000]
 
 ## DB tables
