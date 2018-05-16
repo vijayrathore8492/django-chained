@@ -5,12 +5,12 @@ Django application, build for coding contest. Do not re-use.
   - django 2.0
 
 ## Pre-requisities
-  - **virtualenv**
+  - python3
+  - virtualenv
 
 ## Installation and setup
-Follow below steps for setup
-
 ### Install pre-requisities
+ - sudo apt-get install python3
  - sudo apt-get install python3-pip python3-dev
  - sudo pip3 install virtualenv
 
@@ -19,11 +19,10 @@ Follow below steps for setup
 
 ### Run the server 
  - cd django-chained
- - virtualenv appenv              [You may choose diffrent name of env]
+ - virtualenv appenv
  - source appenv/bin/activate
  - pip3 install -r requirements.txt
- - cd app
- - python3 manage.py runserver    [it will start server on http://localhost:8000]
+ - python3 app/manage.py runserver
 
 ## DB tables
 ### consumers_consumer [list of consumers]
@@ -33,7 +32,6 @@ Follow below steps for setup
 
 ## DIR structure
 ```
- - [djangoenv]                          #Python virtual environment
  - [app]
    - [app]
    - [consumers]                        #App Folder
@@ -64,7 +62,7 @@ Follow below steps for setup
 ## Unit Testing (Optional but highly recommended)
 The unit testing file is included in the source code at app/consumers/tests.py. Follow the steps to perform unit testing. I have included basic test cases, feel free to include more.
   - Activate virtualenv `source djangoenv/bin/activate`
-  - Run Tests `python3 manage.py test consumers`
+  - Run Tests `python3 app/manage.py test consumers`
 
 ## PS
   - This is my first app in Django. I have tried my best to keep standards but may have missed some.
