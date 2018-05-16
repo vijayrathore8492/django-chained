@@ -19,8 +19,11 @@ Follow below steps for setup
 
 ### Run the server 
  - cd django-chained
- - source djangoenv/bin/activate
- - python3 manage.py runserver [it will start server on http://localhost:8000]
+ - virtualenv appenv              [You may choose diffrent name of env]
+ - source appenv/bin/activate
+ - pip3 install -r requirements.txt
+ - cd app
+ - python3 manage.py runserver    [it will start server on http://localhost:8000]
 
 ## DB tables
 ### consumers_consumer [list of consumers]
