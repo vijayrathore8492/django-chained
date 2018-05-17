@@ -22,7 +22,7 @@ Django application, build for coding contest. Do not re-use.
  - virtualenv appenv
  - source appenv/bin/activate
  - pip3 install -r requirements.txt
- - python3 app/manage.py runserver
+ - python3 app/manage.py runserver [run inside virtualenv only]
 
 ## DB tables
 ### consumers_consumer [list of consumers]
